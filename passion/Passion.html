@@ -1,0 +1,58 @@
+<head>
+    <link rel="stylesheet" href="passion.css">
+
+    <title>Passion</title>
+
+    <link href="https://kinsta.com/fr/blog/polices-caracteres-web-safe/#5-calisto-mt" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+
+        <div id="myDropdown" class="dropdown-content">
+            <a href="C:\Users\frere\Desktop\Portfolio\cv lettre de motiv\cv lettre de motiv.html">CV et Lettre de
+                motivation</a>
+            <a href="C:\Users\frere\Desktop\site CESI\lettre motiv.png">Lettre de motivation</a>
+            <a href="C:\Users\frere\Desktop\Portfolio\Page 1 Porfolio.html">Menu</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <div class="parallax"></div>
+   
+    
+    <div style="height:1200px; background-color:rgba(0, 0, 0, 0.986);font-size:36px">
+        <div class="paratxt">
+
+            <img src= "C:\Users\frere\Desktop\Portfolio\img\page passion.png" style="width:70%">
+              </div>
+    </div>
+
+    <div class="parallax">
+    </div>
+
+
+
+</body>

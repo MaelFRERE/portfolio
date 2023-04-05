@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="Css rtfolio.css">
+
+    <title>Menu</title>
+
+    <link href="https://kinsta.com/fr/blog/polices-caracteres-web-safe/#5-calisto-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="pt">
+        <div class="portfoliotxt">
+            <p>PORTFOLIO</p>
+        </div>
+        <div class="portfolioimg">
+            <div class="rond">
+                <div class="rond2">
+                    <div class="rondtxt">
+                        <p>2023 <br>2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box22">
+                    <div class="box22txt">
+                        <p>Desing and Art</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="box3txt">
+                    <p>Frere Mael</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+    
+        <div id="myDropdown" class="dropdown-content">
+          <a href="C:\Users\frere\Desktop\Portfolio\cv lettre de motiv\cv lettre de motiv.html">CV et Lettre de motivation</a>
+          <a href="C:\Users\frere\Desktop\Portfolio\passion\Passion.html">Passion</a>
+          <a href="#">Menu</a>
+        </div>
+      </div>
+    
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+    
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+
+
+</body>

@@ -1,0 +1,116 @@
+<head>
+  <link rel="stylesheet" href="Menu.css">
+
+  <title>Cv et Lettre de motivation</title>
+
+  <link href="https://kinsta.com/fr/blog/polices-caracteres-web-safe/#5-calisto-mt" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a href="C:\Users\frere\Desktop\Portfolio\cv lettre de motiv\cv lettre de motiv.html">CV et Lettre de
+        motivation</a>
+      <a href="C:\Users\frere\Desktop\Portfolio\passion\Passion.html">Passion</a>
+      <a href="C:\Users\frere\Desktop\Portfolio\Page 1 Porfolio.html">Menu</a>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+
+  <div class="cv">
+    <img id="myImg1" src="C:\Users\frere\Desktop\Portfolio\img\CV.png" style="width:100%;max-width:400px">
+    <div class="cvtxt">
+      <p>CV</p>
+    </div>
+  </div>
+
+  <div class="lettre">
+    <img id="myImg" src="C:\Users\frere\Desktop\Portfolio\img\lettre motiv.png" style="width:100%;max-width:400px">
+    <div class="lettretxt">
+      <p>Lettre de Motivation</p>
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
+
+  <script>var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }</script>
+
+
+
+<script>var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg1");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }</script>
+
+
+</body>
